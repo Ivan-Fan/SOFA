@@ -1,0 +1,53 @@
+Running dataset=iquique profile=standard method=sax
+>>> using 16 query workers on 64 physical cores (128 logical CPUs) across detected NUMA nodes
+>>> resolved index workers: 64 (query workers: 16)
+=== MESSI index configuration ===
+  index root    : /vol/home-vol3/wbi/schaefpa/index/2026_09_18_19:35:22
+  layout        : iSAX
+  series length : 256
+  iSAX bounds   : node MBR=on
+  leaf capacity : 20 K (minimum 20 K)
+  split policy  : informed
+  root split    : uniform cardinalities
+  query parallel: hybrid priority queues (16 workers, 16 queues)
+  SIMD          : AVX-512 enabled (may be slower; compare AVX2)
+  transform     : SAX, 16 segments, alphabet 256 (8 bits)
+  binning       : equi-depth; sampling: first values (1 K records, seed 1)
+  query bounds  : tight=on, aggressive=off, loaded leaves=1
+===================================
+>>> Indexing: /home/tmp/schaefpa/seismic/Iquique.bin
+>> building index: [32m0.00%[0m | elapsed 0s | ETA -->> building index: [32m5.00%[0m | elapsed 0s | ETA 5s>> building index: [32m10.00%[0m | elapsed 0s | ETA 2s>> building index: [32m11.11%[0m | elapsed 0s | ETA 2s>> building index: [32m12.11%[0m | elapsed 0s | ETA 2s>> building index: [32m13.10%[0m | elapsed 0s | ETA 2s>> building index: [32m14.09%[0m | elapsed 0s | ETA 2s>> building index: [32m15.08%[0m | elapsed 0s | ETA 2s>> building index: [32m16.07%[0m | elapsed 0s | ETA 2s>> building index: [32m17.06%[0m | elapsed 0s | ETA 2s>> building index: [32m18.05%[0m | elapsed 0s | ETA 2s>> building index: [32m19.04%[0m | elapsed 0s | ETA 2s>> building index: [32m20.03%[0m | elapsed 0s | ETA 2s>> building index: [32m21.02%[0m | elapsed 0s | ETA 2s>> building index: [32m22.01%[0m | elapsed 1s | ETA 2s>> building index: [32m23.00%[0m | elapsed 1s | ETA 2s>> building index: [32m24.12%[0m | elapsed 1s | ETA 2s>> building index: [32m25.11%[0m | elapsed 1s | ETA 2s>> building index: [32m26.10%[0m | elapsed 1s | ETA 2s>> building index: [32m27.09%[0m | elapsed 1s | ETA 2s>> building index: [32m28.08%[0m | elapsed 1s | ETA 2s>> building index: [32m29.07%[0m | elapsed 1s | ETA 2s>> building index: [32m30.06%[0m | elapsed 1s | ETA 2s>> building index: [32m31.05%[0m | elapsed 1s | ETA 2s>> building index: [32m32.04%[0m | elapsed 1s | ETA 1s>> building index: [32m33.03%[0m | elapsed 1s | ETA 1s>> building index: [32m34.02%[0m | elapsed 1s | ETA 1s>> building index: [32m35.01%[0m | elapsed 1s | ETA 1s>> building index: [32m36.00%[0m | elapsed 1s | ETA 1s>> building index: [32m37.12%[0m | elapsed 1s | ETA 1s>> building index: [32m38.11%[0m | elapsed 1s | ETA 1s>> building index: [32m39.10%[0m | elapsed 1s | ETA 1s>> building index: [32m40.09%[0m | elapsed 1s | ETA 1s>> building index: [32m41.08%[0m | elapsed 1s | ETA 1s>> building index: [32m42.07%[0m | elapsed 1s | ETA 1s>> building index: [32m43.06%[0m | elapsed 1s | ETA 1s>> building index: [32m44.05%[0m | elapsed 1s | ETA 1s>> building index: [32m45.04%[0m | elapsed 1s | ETA 1s>> building index: [32m46.03%[0m | elapsed 1s | ETA 1s>> building index: [32m47.03%[0m | elapsed 1s | ETA 1s>> building index: [32m48.02%[0m | elapsed 1s | ETA 1s>> building index: [32m49.01%[0m | elapsed 1s | ETA 1s>> building index: [32m50.12%[0m | elapsed 1s | ETA 1s>> building index: [32m51.11%[0m | elapsed 1s | ETA 1s>> building index: [32m52.10%[0m | elapsed 1s | ETA 1s>> building index: [32m53.09%[0m | elapsed 1s | ETA 1s>> building index: [32m54.08%[0m | elapsed 1s | ETA 1s>> building index: [32m55.12%[0m | elapsed 1s | ETA 1s>> building index: [32m56.11%[0m | elapsed 1s | ETA 1s>> building index: [32m57.10%[0m | elapsed 1s | ETA 1s>> building index: [32m58.09%[0m | elapsed 1s | ETA 1s>> building index: [32m59.08%[0m | elapsed 1s | ETA 1s>> building index: [32m60.11%[0m | elapsed 1s | ETA 1s>> building index: [32m61.10%[0m | elapsed 1s | ETA 1s>> building index: [32m62.09%[0m | elapsed 1s | ETA 1s>> building index: [32m63.08%[0m | elapsed 1s | ETA 1s>> building index: [32m64.07%[0m | elapsed 1s | ETA 1s>> building index: [32m65.06%[0m | elapsed 1s | ETA 1s>> building index: [32m66.05%[0m | elapsed 1s | ETA 0s>> building index: [32m67.04%[0m | elapsed 1s | ETA 0s>> building index: [32m68.12%[0m | elapsed 1s | ETA 0s>> building index: [32m69.11%[0m | elapsed 1s | ETA 0s>> building index: [32m70.10%[0m | elapsed 1s | ETA 0s>> building index: [32m71.09%[0m | elapsed 1s | ETA 0s>> building index: [32m72.12%[0m | elapsed 1s | ETA 0s>> building index: [32m73.03%[0m | elapsed 1s | ETA 0s>> building index: [32m74.02%[0m | elapsed 1s | ETA 0s>> building index: [32m75.01%[0m | elapsed 1s | ETA 0s>> building index: [32m76.12%[0m | elapsed 1s | ETA 0s>> building index: [32m77.07%[0m | elapsed 1s | ETA 0s>> building index: [32m78.06%[0m | elapsed 1s | ETA 0s>> building index: [32m79.01%[0m | elapsed 1s | ETA 0s>> building index: [32m80.00%[0m | elapsed 1s | ETA 0s>> building index: [32m81.02%[0m | elapsed 1s | ETA 0s>> building index: [32m82.01%[0m | elapsed 1s | ETA 0s>> building index: [32m83.01%[0m | elapsed 1s | ETA 0s>> building index: [32m84.00%[0m | elapsed 1s | ETA 0s>> building index: [32m85.00%[0m | elapsed 1s | ETA 0s>> building index: [32m86.02%[0m | elapsed 1s | ETA 0s>> building index: [32m87.01%[0m | elapsed 1s | ETA 0s>> building index: [32m88.01%[0m | elapsed 1s | ETA 0s>> building index: [32m89.00%[0m | elapsed 1s | ETA 0s>> building index: [32m90.00%[0m | elapsed 1s | ETA 0s>> building index: [32m91.02%[0m | elapsed 1s | ETA 0s>> building index: [32m92.01%[0m | elapsed 1s | ETA 0s>> building index: [32m93.01%[0m | elapsed 1s | ETA 0s>> building index: [32m94.00%[0m | elapsed 1s | ETA 0s>> building index: [32m95.00%[0m | elapsed 1s | ETA 0s>> building index: [32m96.02%[0m | elapsed 1s | ETA 0s>> building index: [32m97.01%[0m | elapsed 1s | ETA 0s>> building index: [32m98.01%[0m | elapsed 1s | ETA 0s>> building index: [32m99.00%[0m | elapsed 1s | ETA 0s>> building index: [32m100.00%[0m | elapsed 1s | ETA 0s
+>>> iSAX build timing
+    load + convert             : 0.245 s
+    z-normalization            : 0.000 s (disabled)
+    transform + insert + flush : 1.097 s
+    total                      : 1.343 s
+>>> Finished indexing
+>>> Performing queries in file: /home/tmp/schaefpa/seismic/Iquique_queries.bin
+>>> node_amount is 55791
+idx:    nodes checked_nodes approximate_distance     distance cumulative_ms
+  0:    55791         55791              326.573      252.075       40.418
+  9:    55791         55791              396.184      255.593      486.625
+ 19:    55791         55792              551.096      274.724     1047.446
+ 29:    55791         55791              366.451      210.800     1529.225
+ 39:    55791         55791              152.461      147.246     1976.590
+ 49:    55791         55791              487.465      346.627     2404.336
+ 59:    55791         55791              104.062      102.356     2834.931
+ 69:    55791         55791              363.308      317.657     3194.030
+ 79:    55791         55791              306.824      147.384     3499.714
+ 89:    55791         55791              281.039      190.695     3737.587
+ 99:    55791         55791              104.581       93.752     3889.462
+>>> Finished querying.
+>>> query wall time: 3.899844 s
+=== Query summary ===
+  queries          : 100
+  wall time        : 3.900 s (38.998 ms/query)
+  checked nodes    : 55.79 K/query (100.00% of 55.79 K index nodes)
+  symbolic record bounds: 492.74 K/query (85.12% of 578.85 K indexed series)
+  exact distances  : 317.85 K/query (54.91% of 578.85 K indexed series)
+
+
+=== Benchmark summary: dataset=iquique, profile=standard ===
+Layout  Method    Binning  Leaf cap.  Fanout  Lower bounds/query      LB %   Exact comps/query   Exact %     Walltime
+------------------------------------------------------------------------------------------------------------------------
+iSAX    SAX       depth      20 K       -      492.74 K/query    85.12%      317.85 K/query    54.91%      3.900 s

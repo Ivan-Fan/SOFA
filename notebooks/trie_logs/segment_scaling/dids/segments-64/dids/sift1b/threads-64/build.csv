@@ -1,0 +1,2 @@
+dataset_id,base_count,dimension,threads,preparation_seconds,reference_selection_seconds,grouping_seconds,structure_build_seconds,index_build_seconds,max_rss_kib,base_loading_included,source_conversion_included
+sift1b,100000000,128,64,1.8582e-05,165.886182,707.75585,335.085767,1208.74122,581212,true,false

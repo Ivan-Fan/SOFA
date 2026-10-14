@@ -1,0 +1,1 @@
+dids_benchmark: DIDS samples every 100th base row; --ref-objects must not exceed --base-count / 100

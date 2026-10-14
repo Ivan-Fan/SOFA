@@ -1,0 +1,53 @@
+Running dataset=ethc profile=standard method=sax
+>>> using 16 query workers on 64 physical cores (128 logical CPUs) across detected NUMA nodes
+>>> resolved index workers: 64 (query workers: 16)
+=== MESSI index configuration ===
+  index root    : /vol/home-vol3/wbi/schaefpa/index/2026_09_18_19:33:34
+  layout        : iSAX
+  series length : 256
+  iSAX bounds   : node MBR=on
+  leaf capacity : 20 K (minimum 20 K)
+  split policy  : informed
+  root split    : uniform cardinalities
+  query parallel: hybrid priority queues (16 workers, 16 queues)
+  SIMD          : AVX-512 enabled (may be slower; compare AVX2)
+  transform     : SAX, 16 segments, alphabet 256 (8 bits)
+  binning       : equi-depth; sampling: first values (1 K records, seed 1)
+  query bounds  : tight=on, aggressive=off, loaded leaves=1
+===================================
+>>> Indexing: /home/tmp/schaefpa/seismic/ETHZ.bin
+>> building index: [32m0.00%[0m | elapsed 0s | ETA -->> building index: [32m5.00%[0m | elapsed 1s | ETA 28s>> building index: [32m10.00%[0m | elapsed 1s | ETA 13s>> building index: [32m11.00%[0m | elapsed 2s | ETA 14s>> building index: [32m12.01%[0m | elapsed 2s | ETA 13s>> building index: [32m13.01%[0m | elapsed 2s | ETA 13s>> building index: [32m14.01%[0m | elapsed 2s | ETA 12s>> building index: [32m15.00%[0m | elapsed 2s | ETA 12s>> building index: [32m16.01%[0m | elapsed 2s | ETA 11s>> building index: [32m17.01%[0m | elapsed 2s | ETA 10s>> building index: [32m18.01%[0m | elapsed 2s | ETA 10s>> building index: [32m19.00%[0m | elapsed 2s | ETA 9s>> building index: [32m20.01%[0m | elapsed 2s | ETA 9s>> building index: [32m21.01%[0m | elapsed 2s | ETA 9s>> building index: [32m22.01%[0m | elapsed 2s | ETA 8s>> building index: [32m23.00%[0m | elapsed 2s | ETA 8s>> building index: [32m24.01%[0m | elapsed 2s | ETA 7s>> building index: [32m25.01%[0m | elapsed 2s | ETA 7s>> building index: [32m26.01%[0m | elapsed 2s | ETA 7s>> building index: [32m27.00%[0m | elapsed 2s | ETA 7s>> building index: [32m28.01%[0m | elapsed 2s | ETA 6s>> building index: [32m29.01%[0m | elapsed 2s | ETA 6s>> building index: [32m30.01%[0m | elapsed 2s | ETA 6s>> building index: [32m31.00%[0m | elapsed 2s | ETA 6s>> building index: [32m32.01%[0m | elapsed 2s | ETA 5s>> building index: [32m33.01%[0m | elapsed 3s | ETA 5s>> building index: [32m34.01%[0m | elapsed 3s | ETA 5s>> building index: [32m35.00%[0m | elapsed 3s | ETA 5s>> building index: [32m36.01%[0m | elapsed 3s | ETA 5s>> building index: [32m37.01%[0m | elapsed 3s | ETA 4s>> building index: [32m38.01%[0m | elapsed 3s | ETA 4s>> building index: [32m39.00%[0m | elapsed 3s | ETA 4s>> building index: [32m40.01%[0m | elapsed 3s | ETA 4s>> building index: [32m41.01%[0m | elapsed 3s | ETA 4s>> building index: [32m42.01%[0m | elapsed 3s | ETA 4s>> building index: [32m43.00%[0m | elapsed 3s | ETA 3s>> building index: [32m44.01%[0m | elapsed 3s | ETA 3s>> building index: [32m45.01%[0m | elapsed 3s | ETA 3s>> building index: [32m46.01%[0m | elapsed 3s | ETA 3s>> building index: [32m47.00%[0m | elapsed 3s | ETA 3s>> building index: [32m48.01%[0m | elapsed 3s | ETA 3s>> building index: [32m49.01%[0m | elapsed 3s | ETA 3s>> building index: [32m50.01%[0m | elapsed 3s | ETA 3s>> building index: [32m51.00%[0m | elapsed 3s | ETA 3s>> building index: [32m52.01%[0m | elapsed 3s | ETA 3s>> building index: [32m53.01%[0m | elapsed 3s | ETA 2s>> building index: [32m54.01%[0m | elapsed 3s | ETA 2s>> building index: [32m55.00%[0m | elapsed 3s | ETA 2s>> building index: [32m56.00%[0m | elapsed 3s | ETA 2s>> building index: [32m57.01%[0m | elapsed 3s | ETA 2s>> building index: [32m58.01%[0m | elapsed 3s | ETA 2s>> building index: [32m59.00%[0m | elapsed 3s | ETA 2s>> building index: [32m60.00%[0m | elapsed 3s | ETA 2s>> building index: [32m61.01%[0m | elapsed 3s | ETA 2s>> building index: [32m62.01%[0m | elapsed 3s | ETA 2s>> building index: [32m63.00%[0m | elapsed 3s | ETA 2s>> building index: [32m64.01%[0m | elapsed 3s | ETA 2s>> building index: [32m65.01%[0m | elapsed 3s | ETA 2s>> building index: [32m66.01%[0m | elapsed 3s | ETA 1s>> building index: [32m67.00%[0m | elapsed 3s | ETA 1s>> building index: [32m68.01%[0m | elapsed 3s | ETA 1s>> building index: [32m69.01%[0m | elapsed 3s | ETA 1s>> building index: [32m70.01%[0m | elapsed 3s | ETA 1s>> building index: [32m71.00%[0m | elapsed 3s | ETA 1s>> building index: [32m72.01%[0m | elapsed 3s | ETA 1s>> building index: [32m73.01%[0m | elapsed 3s | ETA 1s>> building index: [32m74.01%[0m | elapsed 3s | ETA 1s>> building index: [32m75.00%[0m | elapsed 3s | ETA 1s>> building index: [32m76.01%[0m | elapsed 3s | ETA 1s>> building index: [32m77.00%[0m | elapsed 3s | ETA 1s>> building index: [32m78.01%[0m | elapsed 3s | ETA 1s>> building index: [32m79.01%[0m | elapsed 3s | ETA 1s>> building index: [32m80.00%[0m | elapsed 3s | ETA 1s>> building index: [32m81.02%[0m | elapsed 3s | ETA 1s>> building index: [32m82.01%[0m | elapsed 3s | ETA 1s>> building index: [32m83.01%[0m | elapsed 3s | ETA 1s>> building index: [32m84.00%[0m | elapsed 3s | ETA 1s>> building index: [32m85.00%[0m | elapsed 3s | ETA 1s>> building index: [32m86.02%[0m | elapsed 3s | ETA 1s>> building index: [32m87.01%[0m | elapsed 3s | ETA 0s>> building index: [32m88.01%[0m | elapsed 3s | ETA 0s>> building index: [32m89.00%[0m | elapsed 3s | ETA 0s>> building index: [32m90.00%[0m | elapsed 3s | ETA 0s>> building index: [32m91.02%[0m | elapsed 3s | ETA 0s>> building index: [32m92.01%[0m | elapsed 3s | ETA 0s>> building index: [32m93.01%[0m | elapsed 3s | ETA 0s>> building index: [32m94.00%[0m | elapsed 3s | ETA 0s>> building index: [32m95.00%[0m | elapsed 3s | ETA 0s>> building index: [32m96.02%[0m | elapsed 3s | ETA 0s>> building index: [32m97.01%[0m | elapsed 3s | ETA 0s>> building index: [32m98.01%[0m | elapsed 3s | ETA 0s>> building index: [32m99.00%[0m | elapsed 3s | ETA 0s>> building index: [32m100.00%[0m | elapsed 4s | ETA 0s
+>>> iSAX build timing
+    load + convert             : 1.496 s
+    z-normalization            : 0.000 s (disabled)
+    transform + insert + flush : 2.098 s
+    total                      : 3.594 s
+>>> Finished indexing
+>>> Performing queries in file: /home/tmp/schaefpa/seismic/ETHZ_queries.bin
+>>> node_amount is 63543
+idx:    nodes checked_nodes approximate_distance     distance cumulative_ms
+  0:    63981         63981              430.243      339.123      191.474
+  9:    63981         63981              400.605      251.284      698.126
+ 19:    63981         63581                8.427        5.605     1090.734
+ 29:    63981         63981              462.239      325.659     1628.983
+ 39:    63981         63601               29.996       26.423     1909.016
+ 49:    63981         63981              374.498      277.570     3005.966
+ 59:    63981         63981              285.657      141.815     4079.560
+ 69:    63981         63593                0.531        0.313     4327.978
+ 79:    63981         63561                0.725        0.725     4727.474
+ 89:    63981         63981              402.437      267.949     5196.668
+ 99:    63981         63659                8.128        1.427     5759.243
+>>> Finished querying.
+>>> query wall time: 5.778056 s
+=== Query summary ===
+  queries          : 100
+  wall time        : 5.778 s (57.781 ms/query)
+  checked nodes    : 63.76 K/query (99.65% of 63.98 K index nodes)
+  symbolic record bounds: 2.14 M/query (42.71% of 5.00 M indexed series)
+  exact distances  : 1.44 M/query (28.81% of 5.00 M indexed series)
+
+
+=== Benchmark summary: dataset=ethc, profile=standard ===
+Layout  Method    Binning  Leaf cap.  Fanout  Lower bounds/query      LB %   Exact comps/query   Exact %     Walltime
+------------------------------------------------------------------------------------------------------------------------
+iSAX    SAX       depth      20 K       -        2.14 M/query    42.71%        1.44 M/query    28.81%      5.778 s

@@ -1,0 +1,146 @@
+Running dataset=stead profile=standard method=sfa-depth
+>>> using 64 query workers on 64 physical cores (128 logical CPUs) across detected NUMA nodes
+>>> resolved index workers: 64 (query workers: 64)
+=== MESSI index configuration ===
+  index root    : /vol/home-vol3/wbi/schaefpa/index/2026_09_19_13:20:17
+  layout        : iSAX
+  series length : 256
+  root dims     : variance-ranked 16 of 32 symbolic dimensions (selected after binning)
+  root dimensions: pending variance estimates
+  lower bounds  : all 32 symbolic dimensions (SIMD enabled)
+  iSAX bounds   : node MBR=on
+  leaf capacity : 20 K (minimum 20 K)
+  split policy  : informed
+  root split    : uniform cardinalities
+  query parallel: hybrid priority queues (64 workers, 64 queues)
+  SIMD          : AVX-512 enabled (may be slower; compare AVX2)
+  symbolic LB   : blocked SIMD across 32 dimensions
+  transform     : SFA, 32 DFT coefficients, alphabet 256 (8 bits)
+  selection     : variance-based; ignore mean coefficient: yes
+  binning       : equi-depth; sampling: uniform (1 M records, seed 1)
+  query bounds  : tight=on, aggressive=off, loaded leaves=1
+===================================
+>>> SFA: Initialized bins[32][255] 
+>>> Binning: /home/tmp/schaefpa/seismic/STEAD.bin
+>> sampling: [32m0.00%[0m | elapsed 0s | ETA -->> sampling: [32m1.01%[0m | elapsed 0s | ETA 1s>> sampling: [32m2.01%[0m | elapsed 0s | ETA 1s>> sampling: [32m3.01%[0m | elapsed 0s | ETA 1s>> sampling: [32m4.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m5.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m6.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m7.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m8.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m9.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m10.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m11.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m12.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m13.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m14.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m15.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m16.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m17.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m18.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m19.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m20.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m21.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m22.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m23.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m24.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m25.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m26.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m27.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m28.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m29.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m30.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m31.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m32.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m33.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m34.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m35.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m36.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m37.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m38.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m39.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m40.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m41.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m42.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m43.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m44.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m45.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m46.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m47.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m48.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m49.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m50.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m51.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m52.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m53.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m54.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m55.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m56.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m57.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m58.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m59.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m60.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m61.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m62.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m63.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m64.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m65.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m66.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m67.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m68.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m69.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m70.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m71.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m72.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m73.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m74.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m75.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m76.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m77.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m78.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m79.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m80.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m81.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m82.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m83.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m84.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m85.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m86.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m87.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m88.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m89.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m90.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m91.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m92.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m93.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m94.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m95.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m96.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m97.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m98.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m99.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m100.00%[0m | elapsed 0s | ETA 0s
+>>> SFA: variance ranking (top 8/32):
+0, (8.6497) 1, (6.1417) 2, (5.0909) 3, (4.4747) 4, (4.1476) 5, (3.9553) 6, (3.8742) 7, (3.7237) ... (+24 more)
+>>> SFA: Coefficients Used: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 
+>>> root dims: variance-ranked 16 of 32
+>>> root dimensions: 1,0,3,2,5,4,7,6,9,8,11,13,10,12,15,14
+>>> lower-bound dimensions: all 32 symbolic dimensions
+>>> SFA: Sample size 1000000
+>>> SFA: Using Equi-depth histograms
+>>> SFA binning timing
+    sample + DFT          : 0.087 s
+    variance + root split : 0.192 s
+    bin sorting           : 0.215 s
+    total                 : 0.494 s
+>>> Finished binning
+>>> Indexing: /home/tmp/schaefpa/seismic/STEAD.bin
+>> building index: [32m0.00%[0m | elapsed 0s | ETA -->> building index: [32m5.00%[0m | elapsed 23s | ETA 430s>> building index: [32m10.00%[0m | elapsed 23s | ETA 204s>> building index: [32m11.00%[0m | elapsed 26s | ETA 213s>> building index: [32m12.00%[0m | elapsed 28s | ETA 205s>> building index: [32m13.00%[0m | elapsed 29s | ETA 195s>> building index: [32m14.00%[0m | elapsed 30s | ETA 184s>> building index: [32m15.00%[0m | elapsed 31s | ETA 173s>> building index: [32m16.00%[0m | elapsed 31s | ETA 163s>> building index: [32m17.00%[0m | elapsed 31s | ETA 154s>> building index: [32m18.00%[0m | elapsed 32s | ETA 145s>> building index: [32m19.00%[0m | elapsed 32s | ETA 137s>> building index: [32m20.00%[0m | elapsed 32s | ETA 129s>> building index: [32m21.00%[0m | elapsed 32s | ETA 122s>> building index: [32m22.00%[0m | elapsed 33s | ETA 115s>> building index: [32m23.00%[0m | elapsed 33s | ETA 109s>> building index: [32m24.00%[0m | elapsed 33s | ETA 104s>> building index: [32m25.00%[0m | elapsed 33s | ETA 98s>> building index: [32m26.00%[0m | elapsed 33s | ETA 94s>> building index: [32m27.00%[0m | elapsed 33s | ETA 89s>> building index: [32m28.00%[0m | elapsed 33s | ETA 85s>> building index: [32m29.00%[0m | elapsed 33s | ETA 81s>> building index: [32m30.00%[0m | elapsed 33s | ETA 77s>> building index: [32m31.00%[0m | elapsed 33s | ETA 74s>> building index: [32m32.00%[0m | elapsed 33s | ETA 71s>> building index: [32m33.00%[0m | elapsed 33s | ETA 68s>> building index: [32m34.00%[0m | elapsed 33s | ETA 65s>> building index: [32m35.00%[0m | elapsed 33s | ETA 62s>> building index: [32m36.00%[0m | elapsed 33s | ETA 59s>> building index: [32m37.00%[0m | elapsed 33s | ETA 57s>> building index: [32m38.00%[0m | elapsed 34s | ETA 55s>> building index: [32m39.00%[0m | elapsed 34s | ETA 53s>> building index: [32m40.00%[0m | elapsed 34s | ETA 50s>> building index: [32m41.00%[0m | elapsed 34s | ETA 49s>> building index: [32m42.00%[0m | elapsed 34s | ETA 47s>> building index: [32m43.00%[0m | elapsed 34s | ETA 45s>> building index: [32m44.00%[0m | elapsed 34s | ETA 43s>> building index: [32m45.00%[0m | elapsed 34s | ETA 41s>> building index: [32m46.00%[0m | elapsed 34s | ETA 40s>> building index: [32m47.00%[0m | elapsed 34s | ETA 38s>> building index: [32m48.00%[0m | elapsed 34s | ETA 37s>> building index: [32m49.00%[0m | elapsed 34s | ETA 36s>> building index: [32m50.00%[0m | elapsed 34s | ETA 34s>> building index: [32m51.00%[0m | elapsed 34s | ETA 33s>> building index: [32m52.00%[0m | elapsed 34s | ETA 32s>> building index: [32m53.00%[0m | elapsed 34s | ETA 30s>> building index: [32m54.00%[0m | elapsed 34s | ETA 29s>> building index: [32m55.00%[0m | elapsed 34s | ETA 28s>> building index: [32m56.00%[0m | elapsed 35s | ETA 27s>> building index: [32m57.00%[0m | elapsed 35s | ETA 26s>> building index: [32m58.00%[0m | elapsed 35s | ETA 25s>> building index: [32m59.00%[0m | elapsed 35s | ETA 24s>> building index: [32m60.00%[0m | elapsed 35s | ETA 23s>> building index: [32m61.00%[0m | elapsed 35s | ETA 22s>> building index: [32m62.00%[0m | elapsed 35s | ETA 21s>> building index: [32m63.00%[0m | elapsed 35s | ETA 21s>> building index: [32m64.00%[0m | elapsed 35s | ETA 20s>> building index: [32m65.00%[0m | elapsed 35s | ETA 19s>> building index: [32m66.00%[0m | elapsed 35s | ETA 18s>> building index: [32m67.00%[0m | elapsed 35s | ETA 17s>> building index: [32m68.00%[0m | elapsed 35s | ETA 17s>> building index: [32m69.00%[0m | elapsed 35s | ETA 16s>> building index: [32m70.00%[0m | elapsed 35s | ETA 15s>> building index: [32m71.00%[0m | elapsed 35s | ETA 14s>> building index: [32m72.00%[0m | elapsed 35s | ETA 14s>> building index: [32m73.00%[0m | elapsed 35s | ETA 13s>> building index: [32m74.00%[0m | elapsed 36s | ETA 12s>> building index: [32m75.00%[0m | elapsed 36s | ETA 12s>> building index: [32m76.00%[0m | elapsed 36s | ETA 11s>> building index: [32m77.00%[0m | elapsed 36s | ETA 11s>> building index: [32m78.00%[0m | elapsed 36s | ETA 10s>> building index: [32m79.00%[0m | elapsed 36s | ETA 10s>> building index: [32m80.00%[0m | elapsed 36s | ETA 9s>> building index: [32m81.02%[0m | elapsed 36s | ETA 8s>> building index: [32m82.01%[0m | elapsed 36s | ETA 8s>> building index: [32m83.01%[0m | elapsed 36s | ETA 7s>> building index: [32m84.00%[0m | elapsed 36s | ETA 7s>> building index: [32m85.00%[0m | elapsed 36s | ETA 6s>> building index: [32m86.02%[0m | elapsed 36s | ETA 6s>> building index: [32m87.01%[0m | elapsed 36s | ETA 5s>> building index: [32m88.01%[0m | elapsed 36s | ETA 5s>> building index: [32m89.00%[0m | elapsed 36s | ETA 4s>> building index: [32m90.00%[0m | elapsed 36s | ETA 4s>> building index: [32m91.02%[0m | elapsed 36s | ETA 4s>> building index: [32m92.01%[0m | elapsed 36s | ETA 3s>> building index: [32m93.01%[0m | elapsed 36s | ETA 3s>> building index: [32m94.00%[0m | elapsed 36s | ETA 2s>> building index: [32m95.00%[0m | elapsed 36s | ETA 2s>> building index: [32m96.02%[0m | elapsed 36s | ETA 2s>> building index: [32m97.01%[0m | elapsed 36s | ETA 1s>> building index: [32m98.01%[0m | elapsed 36s | ETA 1s>> building index: [32m99.00%[0m | elapsed 36s | ETA 0s>> building index: [32m100.00%[0m | elapsed 41s | ETA 0s
+>>> iSAX build timing
+    load + convert             : 22.632 s
+    z-normalization            : 0.000 s (disabled)
+    transform + insert + flush : 17.880 s
+    total                      : 40.513 s
+>>> Finished indexing
+>>> Performing queries in file: /home/tmp/schaefpa/seismic/STEAD_queries.bin
+>>> node_amount is 65536
+idx:    nodes checked_nodes approximate_distance     distance cumulative_ms
+  0:    66076         65875              295.489      217.268      596.508
+  9:    66076         65536               70.056       41.257     2007.925
+ 19:    66076         65875              265.522      205.413     4963.301
+ 29:    66076         65875              270.674      157.164     7852.619
+ 39:    66076         65875              296.850      190.394    10380.267
+ 49:    66076         65643              228.584      107.267    12358.975
+ 59:    66076         65875              283.043      224.672    15377.588
+ 69:    66076         65875              262.948      167.877    18088.366
+ 79:    66076         65875              216.811      158.856    20622.067
+ 89:    66076         65875              271.717      184.346    23173.883
+ 99:    66076         65875              244.561      136.344    25393.667
+>>> Finished querying.
+>>> query wall time: 25.407984 s
+=== Query summary ===
+  queries          : 100
+  wall time        : 25.408 s (254.080 ms/query)
+  checked nodes    : 65.83 K/query (99.63% of 66.08 K index nodes)
+  symbolic record bounds: 85.41 M/query (97.81% of 87.32 M indexed series)
+  exact distances  : 11.05 M/query (12.65% of 87.32 M indexed series)
+
+Running dataset=stead profile=standard method=sfa-width
+>>> using 64 query workers on 64 physical cores (128 logical CPUs) across detected NUMA nodes
+>>> resolved index workers: 64 (query workers: 64)
+=== MESSI index configuration ===
+  index root    : /vol/home-vol3/wbi/schaefpa/index/2026_09_19_13:21:27
+  layout        : iSAX
+  series length : 256
+  root dims     : variance-ranked 16 of 32 symbolic dimensions (selected after binning)
+  root dimensions: pending variance estimates
+  lower bounds  : all 32 symbolic dimensions (SIMD enabled)
+  iSAX bounds   : node MBR=on
+  leaf capacity : 20 K (minimum 20 K)
+  split policy  : informed
+  root split    : uniform cardinalities
+  query parallel: hybrid priority queues (64 workers, 64 queues)
+  SIMD          : AVX-512 enabled (may be slower; compare AVX2)
+  symbolic LB   : blocked SIMD across 32 dimensions
+  transform     : SFA, 32 DFT coefficients, alphabet 256 (8 bits)
+  selection     : variance-based; ignore mean coefficient: yes
+  binning       : equi-width; sampling: uniform (1 M records, seed 1)
+  query bounds  : tight=on, aggressive=off, loaded leaves=1
+===================================
+>>> SFA: Initialized bins[32][255] 
+>>> Binning: /home/tmp/schaefpa/seismic/STEAD.bin
+>> sampling: [32m0.00%[0m | elapsed 0s | ETA -->> sampling: [32m1.01%[0m | elapsed 0s | ETA 1s>> sampling: [32m2.01%[0m | elapsed 0s | ETA 1s>> sampling: [32m3.01%[0m | elapsed 0s | ETA 1s>> sampling: [32m4.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m5.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m6.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m7.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m8.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m9.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m10.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m11.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m12.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m13.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m14.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m15.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m16.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m17.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m18.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m19.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m20.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m21.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m22.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m23.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m24.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m25.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m26.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m27.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m28.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m29.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m30.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m31.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m32.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m33.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m34.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m35.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m36.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m37.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m38.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m39.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m40.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m41.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m42.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m43.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m44.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m45.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m46.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m47.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m48.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m49.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m50.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m51.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m52.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m53.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m54.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m55.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m56.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m57.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m58.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m59.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m60.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m61.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m62.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m63.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m64.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m65.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m66.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m67.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m68.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m69.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m70.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m71.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m72.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m73.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m74.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m75.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m76.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m77.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m78.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m79.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m80.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m81.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m82.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m83.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m84.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m85.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m86.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m87.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m88.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m89.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m90.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m91.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m92.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m93.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m94.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m95.01%[0m | elapsed 0s | ETA 0s>> sampling: [32m96.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m97.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m98.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m99.00%[0m | elapsed 0s | ETA 0s>> sampling: [32m100.00%[0m | elapsed 0s | ETA 0s
+>>> SFA: variance ranking (top 8/32):
+0, (8.6497) 1, (6.1417) 2, (5.0909) 3, (4.4747) 4, (4.1476) 5, (3.9553) 6, (3.8742) 7, (3.7237) ... (+24 more)
+>>> SFA: Coefficients Used: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 
+>>> root dims: variance-ranked 16 of 32
+>>> root dimensions: 1,0,3,2,5,4,7,6,9,8,11,13,10,12,15,14
+>>> lower-bound dimensions: all 32 symbolic dimensions
+>>> SFA: Sample size 1000000
+>>> SFA: Using Equi-width histograms
+>>> SFA binning timing
+    sample + DFT          : 0.088 s
+    variance + root split : 0.147 s
+    bin sorting           : 0.210 s
+    total                 : 0.445 s
+>>> Finished binning
+>>> Indexing: /home/tmp/schaefpa/seismic/STEAD.bin
+>> building index: [32m0.00%[0m | elapsed 0s | ETA -->> building index: [32m5.00%[0m | elapsed 23s | ETA 430s>> building index: [32m10.00%[0m | elapsed 23s | ETA 204s>> building index: [32m11.00%[0m | elapsed 25s | ETA 206s>> building index: [32m12.00%[0m | elapsed 27s | ETA 196s>> building index: [32m13.00%[0m | elapsed 28s | ETA 185s>> building index: [32m14.00%[0m | elapsed 28s | ETA 174s>> building index: [32m15.00%[0m | elapsed 29s | ETA 164s>> building index: [32m16.00%[0m | elapsed 29s | ETA 154s>> building index: [32m17.00%[0m | elapsed 30s | ETA 146s>> building index: [32m18.00%[0m | elapsed 30s | ETA 137s>> building index: [32m19.00%[0m | elapsed 30s | ETA 130s>> building index: [32m20.00%[0m | elapsed 31s | ETA 123s>> building index: [32m21.00%[0m | elapsed 31s | ETA 116s>> building index: [32m22.00%[0m | elapsed 31s | ETA 110s>> building index: [32m23.00%[0m | elapsed 31s | ETA 105s>> building index: [32m24.00%[0m | elapsed 31s | ETA 100s>> building index: [32m25.00%[0m | elapsed 32s | ETA 95s>> building index: [32m26.00%[0m | elapsed 32s | ETA 90s>> building index: [32m27.00%[0m | elapsed 32s | ETA 86s>> building index: [32m28.00%[0m | elapsed 32s | ETA 82s>> building index: [32m29.00%[0m | elapsed 32s | ETA 78s>> building index: [32m30.00%[0m | elapsed 32s | ETA 75s>> building index: [32m31.00%[0m | elapsed 32s | ETA 72s>> building index: [32m32.00%[0m | elapsed 32s | ETA 68s>> building index: [32m33.00%[0m | elapsed 32s | ETA 66s>> building index: [32m34.00%[0m | elapsed 32s | ETA 63s>> building index: [32m35.00%[0m | elapsed 32s | ETA 60s>> building index: [32m36.00%[0m | elapsed 32s | ETA 58s>> building index: [32m37.00%[0m | elapsed 32s | ETA 55s>> building index: [32m38.00%[0m | elapsed 33s | ETA 53s>> building index: [32m39.00%[0m | elapsed 33s | ETA 51s>> building index: [32m40.00%[0m | elapsed 33s | ETA 49s>> building index: [32m41.00%[0m | elapsed 33s | ETA 47s>> building index: [32m42.00%[0m | elapsed 33s | ETA 45s>> building index: [32m43.00%[0m | elapsed 33s | ETA 43s>> building index: [32m44.00%[0m | elapsed 33s | ETA 42s>> building index: [32m45.00%[0m | elapsed 33s | ETA 40s>> building index: [32m46.00%[0m | elapsed 33s | ETA 39s>> building index: [32m47.00%[0m | elapsed 33s | ETA 37s>> building index: [32m48.00%[0m | elapsed 33s | ETA 36s>> building index: [32m49.00%[0m | elapsed 33s | ETA 34s>> building index: [32m50.00%[0m | elapsed 33s | ETA 33s>> building index: [32m51.00%[0m | elapsed 33s | ETA 32s>> building index: [32m52.00%[0m | elapsed 33s | ETA 31s>> building index: [32m53.00%[0m | elapsed 33s | ETA 29s>> building index: [32m54.00%[0m | elapsed 33s | ETA 28s>> building index: [32m55.00%[0m | elapsed 33s | ETA 27s>> building index: [32m56.00%[0m | elapsed 33s | ETA 26s>> building index: [32m57.00%[0m | elapsed 33s | ETA 25s>> building index: [32m58.00%[0m | elapsed 33s | ETA 24s>> building index: [32m59.00%[0m | elapsed 34s | ETA 23s>> building index: [32m60.00%[0m | elapsed 34s | ETA 22s>> building index: [32m61.00%[0m | elapsed 34s | ETA 22s>> building index: [32m62.00%[0m | elapsed 34s | ETA 21s>> building index: [32m63.00%[0m | elapsed 34s | ETA 20s>> building index: [32m64.00%[0m | elapsed 34s | ETA 19s>> building index: [32m65.00%[0m | elapsed 34s | ETA 18s>> building index: [32m66.00%[0m | elapsed 34s | ETA 17s>> building index: [32m67.00%[0m | elapsed 34s | ETA 17s>> building index: [32m68.00%[0m | elapsed 34s | ETA 16s>> building index: [32m69.00%[0m | elapsed 34s | ETA 15s>> building index: [32m70.00%[0m | elapsed 34s | ETA 15s>> building index: [32m71.00%[0m | elapsed 34s | ETA 14s>> building index: [32m72.00%[0m | elapsed 34s | ETA 13s>> building index: [32m73.00%[0m | elapsed 34s | ETA 13s>> building index: [32m74.00%[0m | elapsed 34s | ETA 12s>> building index: [32m75.00%[0m | elapsed 34s | ETA 11s>> building index: [32m76.00%[0m | elapsed 34s | ETA 11s>> building index: [32m77.00%[0m | elapsed 34s | ETA 10s>> building index: [32m78.00%[0m | elapsed 35s | ETA 10s>> building index: [32m79.00%[0m | elapsed 35s | ETA 9s>> building index: [32m80.00%[0m | elapsed 35s | ETA 9s>> building index: [32m81.02%[0m | elapsed 35s | ETA 8s>> building index: [32m82.01%[0m | elapsed 35s | ETA 8s>> building index: [32m83.01%[0m | elapsed 35s | ETA 7s>> building index: [32m84.00%[0m | elapsed 35s | ETA 7s>> building index: [32m85.00%[0m | elapsed 35s | ETA 6s>> building index: [32m86.02%[0m | elapsed 35s | ETA 6s>> building index: [32m87.01%[0m | elapsed 35s | ETA 5s>> building index: [32m88.01%[0m | elapsed 35s | ETA 5s>> building index: [32m89.00%[0m | elapsed 35s | ETA 4s>> building index: [32m90.00%[0m | elapsed 35s | ETA 4s>> building index: [32m91.02%[0m | elapsed 35s | ETA 3s>> building index: [32m92.01%[0m | elapsed 35s | ETA 3s>> building index: [32m93.01%[0m | elapsed 35s | ETA 3s>> building index: [32m94.00%[0m | elapsed 35s | ETA 2s>> building index: [32m95.00%[0m | elapsed 35s | ETA 2s>> building index: [32m96.02%[0m | elapsed 35s | ETA 1s>> building index: [32m97.01%[0m | elapsed 35s | ETA 1s>> building index: [32m98.01%[0m | elapsed 35s | ETA 1s>> building index: [32m99.00%[0m | elapsed 35s | ETA 0s>> building index: [32m100.00%[0m | elapsed 43s | ETA 0s
+>>> iSAX build timing
+    load + convert             : 22.616 s
+    z-normalization            : 0.000 s (disabled)
+    transform + insert + flush : 20.266 s
+    total                      : 42.883 s
+>>> Finished indexing
+>>> Performing queries in file: /home/tmp/schaefpa/seismic/STEAD_queries.bin
+>>> node_amount is 65536
+idx:    nodes checked_nodes approximate_distance     distance cumulative_ms
+  0:    68810         68472              278.577      217.268      613.037
+  9:    68810         65566               90.866       41.257     2331.860
+ 19:    68810         68472              247.074      205.413     5572.212
+ 29:    68810         68472              270.674      157.164     8633.958
+ 39:    68810         68472              293.039      190.394    11360.926
+ 49:    68810         68300              164.995      107.267    13397.075
+ 59:    68810         68472              307.386      224.672    16488.571
+ 69:    68810         68472              320.623      167.877    19228.626
+ 79:    68810         68472              204.109      158.856    21935.930
+ 89:    68810         68472              313.061      184.346    24628.187
+ 99:    68810         68472              245.825      136.344    27049.522
+>>> Finished querying.
+>>> query wall time: 27.063916 s
+=== Query summary ===
+  queries          : 100
+  wall time        : 27.064 s (270.639 ms/query)
+  checked nodes    : 68.39 K/query (99.40% of 68.81 K index nodes)
+  symbolic record bounds: 85.39 M/query (97.79% of 87.32 M indexed series)
+  exact distances  : 11.87 M/query (13.59% of 87.32 M indexed series)
+
+
+=== Benchmark summary: dataset=stead, profile=standard ===
+Layout  Method    Binning  Leaf cap.  Fanout  Lower bounds/query      LB %   Exact comps/query   Exact %     Walltime
+------------------------------------------------------------------------------------------------------------------------
+iSAX    SFA       depth      20 K       -       85.41 M/query    97.81%       11.05 M/query    12.65%     25.408 s
+iSAX    SFA       width      20 K       -       85.39 M/query    97.79%       11.87 M/query    13.59%     27.064 s

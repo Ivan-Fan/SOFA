@@ -1,0 +1,2 @@
+dataset_id,base_count,dimension,threads,preparation_seconds,reference_selection_seconds,grouping_seconds,structure_build_seconds,index_build_seconds,max_rss_kib,base_loading_included,source_conversion_included
+bigann,100000000,128,64,62.9854641,165.74144,708.253405,333.094555,1207.09813,581276,true,false

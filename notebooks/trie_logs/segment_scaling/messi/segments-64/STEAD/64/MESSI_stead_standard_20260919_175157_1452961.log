@@ -1,0 +1,57 @@
+Running dataset=stead profile=standard method=sax
+>>> using 64 query workers on 64 physical cores (128 logical CPUs) across detected NUMA nodes
+>>> resolved index workers: 64 (query workers: 64)
+=== MESSI index configuration ===
+  index root    : /vol/home-vol3/wbi/schaefpa/index/2026_09_19_17:51:57
+  layout        : iSAX
+  series length : 256
+  root dims     : uniform 16 of 64 symbolic dimensions
+  root dimensions: 0,4,8,12,16,20,24,28,32,36,40,44,48,52,56,60
+  lower bounds  : all 64 symbolic dimensions (SIMD enabled)
+  iSAX bounds   : node MBR=on
+  leaf capacity : 20 K (minimum 20 K)
+  split policy  : informed
+  root split    : uniform cardinalities
+  query parallel: hybrid priority queues (64 workers, 64 queues)
+  SIMD          : AVX-512 enabled (may be slower; compare AVX2)
+  symbolic LB   : blocked SIMD across 64 dimensions
+  transform     : SAX, 64 segments, alphabet 256 (8 bits)
+  binning       : equi-depth; sampling: first values (1 K records, seed 1)
+  query bounds  : tight=on, aggressive=off, loaded leaves=1
+===================================
+>>> Indexing: /home/tmp/schaefpa/seismic/STEAD.bin
+>> building index: [32m0.00%[0m | elapsed 0s | ETA -->> building index: [32m5.00%[0m | elapsed 23s | ETA 435s>> building index: [32m10.00%[0m | elapsed 23s | ETA 206s>> building index: [32m11.00%[0m | elapsed 27s | ETA 220s>> building index: [32m12.00%[0m | elapsed 29s | ETA 214s>> building index: [32m13.00%[0m | elapsed 31s | ETA 206s>> building index: [32m14.00%[0m | elapsed 32s | ETA 196s>> building index: [32m15.00%[0m | elapsed 33s | ETA 185s>> building index: [32m16.00%[0m | elapsed 34s | ETA 176s>> building index: [32m17.00%[0m | elapsed 35s | ETA 169s>> building index: [32m18.00%[0m | elapsed 35s | ETA 160s>> building index: [32m19.00%[0m | elapsed 35s | ETA 151s>> building index: [32m20.00%[0m | elapsed 36s | ETA 143s>> building index: [32m21.00%[0m | elapsed 36s | ETA 135s>> building index: [32m22.00%[0m | elapsed 36s | ETA 128s>> building index: [32m23.00%[0m | elapsed 36s | ETA 121s>> building index: [32m24.00%[0m | elapsed 36s | ETA 115s>> building index: [32m25.00%[0m | elapsed 36s | ETA 109s>> building index: [32m26.00%[0m | elapsed 37s | ETA 104s>> building index: [32m27.00%[0m | elapsed 37s | ETA 99s>> building index: [32m28.00%[0m | elapsed 37s | ETA 94s>> building index: [32m29.00%[0m | elapsed 37s | ETA 90s>> building index: [32m30.00%[0m | elapsed 37s | ETA 86s>> building index: [32m31.00%[0m | elapsed 37s | ETA 82s>> building index: [32m32.00%[0m | elapsed 37s | ETA 79s>> building index: [32m33.00%[0m | elapsed 37s | ETA 75s>> building index: [32m34.00%[0m | elapsed 37s | ETA 72s>> building index: [32m35.00%[0m | elapsed 37s | ETA 69s>> building index: [32m36.00%[0m | elapsed 37s | ETA 66s>> building index: [32m37.00%[0m | elapsed 37s | ETA 64s>> building index: [32m38.00%[0m | elapsed 37s | ETA 61s>> building index: [32m39.00%[0m | elapsed 38s | ETA 59s>> building index: [32m40.00%[0m | elapsed 38s | ETA 56s>> building index: [32m41.00%[0m | elapsed 38s | ETA 54s>> building index: [32m42.00%[0m | elapsed 38s | ETA 52s>> building index: [32m43.00%[0m | elapsed 38s | ETA 50s>> building index: [32m44.00%[0m | elapsed 38s | ETA 48s>> building index: [32m45.00%[0m | elapsed 38s | ETA 47s>> building index: [32m46.00%[0m | elapsed 38s | ETA 45s>> building index: [32m47.00%[0m | elapsed 38s | ETA 43s>> building index: [32m48.00%[0m | elapsed 38s | ETA 41s>> building index: [32m49.00%[0m | elapsed 38s | ETA 40s>> building index: [32m50.00%[0m | elapsed 38s | ETA 38s>> building index: [32m51.00%[0m | elapsed 39s | ETA 37s>> building index: [32m52.00%[0m | elapsed 39s | ETA 36s>> building index: [32m53.00%[0m | elapsed 39s | ETA 34s>> building index: [32m54.00%[0m | elapsed 39s | ETA 33s>> building index: [32m55.00%[0m | elapsed 39s | ETA 32s>> building index: [32m56.00%[0m | elapsed 39s | ETA 31s>> building index: [32m57.00%[0m | elapsed 39s | ETA 29s>> building index: [32m58.00%[0m | elapsed 39s | ETA 28s>> building index: [32m59.00%[0m | elapsed 39s | ETA 27s>> building index: [32m60.00%[0m | elapsed 39s | ETA 26s>> building index: [32m61.00%[0m | elapsed 39s | ETA 25s>> building index: [32m62.00%[0m | elapsed 39s | ETA 24s>> building index: [32m63.00%[0m | elapsed 39s | ETA 23s>> building index: [32m64.00%[0m | elapsed 40s | ETA 22s>> building index: [32m65.00%[0m | elapsed 40s | ETA 21s>> building index: [32m66.00%[0m | elapsed 40s | ETA 20s>> building index: [32m67.00%[0m | elapsed 40s | ETA 20s>> building index: [32m68.00%[0m | elapsed 40s | ETA 19s>> building index: [32m69.00%[0m | elapsed 40s | ETA 18s>> building index: [32m70.00%[0m | elapsed 40s | ETA 17s>> building index: [32m71.00%[0m | elapsed 40s | ETA 16s>> building index: [32m72.00%[0m | elapsed 40s | ETA 16s>> building index: [32m73.00%[0m | elapsed 40s | ETA 15s>> building index: [32m74.00%[0m | elapsed 40s | ETA 14s>> building index: [32m75.00%[0m | elapsed 40s | ETA 13s>> building index: [32m76.00%[0m | elapsed 41s | ETA 13s>> building index: [32m77.00%[0m | elapsed 41s | ETA 12s>> building index: [32m78.00%[0m | elapsed 41s | ETA 11s>> building index: [32m79.00%[0m | elapsed 41s | ETA 11s>> building index: [32m80.00%[0m | elapsed 41s | ETA 10s>> building index: [32m81.02%[0m | elapsed 41s | ETA 10s>> building index: [32m82.01%[0m | elapsed 41s | ETA 9s>> building index: [32m83.01%[0m | elapsed 41s | ETA 8s>> building index: [32m84.00%[0m | elapsed 41s | ETA 8s>> building index: [32m85.00%[0m | elapsed 41s | ETA 7s>> building index: [32m86.02%[0m | elapsed 41s | ETA 7s>> building index: [32m87.01%[0m | elapsed 41s | ETA 6s>> building index: [32m88.01%[0m | elapsed 41s | ETA 6s>> building index: [32m89.00%[0m | elapsed 41s | ETA 5s>> building index: [32m90.00%[0m | elapsed 41s | ETA 5s>> building index: [32m91.02%[0m | elapsed 41s | ETA 4s>> building index: [32m92.01%[0m | elapsed 42s | ETA 4s>> building index: [32m93.01%[0m | elapsed 42s | ETA 3s>> building index: [32m94.00%[0m | elapsed 42s | ETA 3s>> building index: [32m95.00%[0m | elapsed 42s | ETA 2s>> building index: [32m96.02%[0m | elapsed 42s | ETA 2s>> building index: [32m97.01%[0m | elapsed 42s | ETA 1s>> building index: [32m98.01%[0m | elapsed 42s | ETA 1s>> building index: [32m99.00%[0m | elapsed 42s | ETA 0s>> building index: [32m100.00%[0m | elapsed 77s | ETA 0s
+>>> iSAX build timing
+    load + convert             : 22.908 s
+    z-normalization            : 0.000 s (disabled)
+    transform + insert + flush : 54.505 s
+    total                      : 77.413 s
+>>> Finished indexing
+>>> Performing queries in file: /home/tmp/schaefpa/seismic/STEAD_queries.bin
+>>> node_amount is 65536
+idx:    nodes checked_nodes approximate_distance     distance cumulative_ms
+  0:    66826         66452              294.601      217.268      410.005
+  9:    66826         65876               85.814       41.257     2993.307
+ 19:    66826         66452              259.513      205.413     5493.693
+ 29:    66826         66452              269.802      157.164     7950.557
+ 39:    66826         66452              258.917      190.394    10279.931
+ 49:    66826         66237              185.244      107.267    12647.457
+ 59:    66826         66452              273.350      224.672    15127.407
+ 69:    66826         66452              253.571      167.877    17585.202
+ 79:    66826         66452              228.341      158.856    20057.705
+ 89:    66826         66452              241.441      184.346    22438.068
+ 99:    66826         66405              191.174      136.344    24796.276
+>>> Finished querying.
+>>> query wall time: 24.814130 s
+=== Query summary ===
+  queries          : 100
+  wall time        : 24.814 s (248.141 ms/query)
+  checked nodes    : 66.39 K/query (99.34% of 66.83 K index nodes)
+  symbolic record bounds: 86.88 M/query (99.50% of 87.32 M indexed series)
+  exact distances  : 815.72 K/query (0.93% of 87.32 M indexed series)
+
+
+=== Benchmark summary: dataset=stead, profile=standard ===
+Layout  Method    Binning  Leaf cap.  Fanout  Lower bounds/query      LB %   Exact comps/query   Exact %     Walltime
+------------------------------------------------------------------------------------------------------------------------
+iSAX    SAX       depth      20 K       -       86.88 M/query    99.50%      815.72 K/query     0.93%     24.814 s
